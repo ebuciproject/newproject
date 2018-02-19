@@ -1,0 +1,101 @@
+body {
+  font-family: Arial;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5; }
+
+header {
+  background-color: #444;
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
+  header ul {
+    text-align: right; }
+
+footer {
+  background-color: #444;
+  height: 20px;
+  line-height: 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  bottom: 0; }
+
+.logo a {
+  color: #fff;
+  font-size: 26px;
+  text-decoration: none;
+  display: block; }
+
+.nav-hor {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0; }
+  .nav-hor li {
+    font-size: 16px;
+    display: inline-block; }
+    .nav-hor li.active a {
+      background-color: #222; }
+      .nav-hor li.active a:hover {
+        color: #444;
+        background-color: #eee; }
+  .nav-hor a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s; }
+    .nav-hor a:hover {
+      color: #444;
+      background-color: #eee; }
+
+.main-page {
+  background: linear-gradient(45deg, #76b852, #8DC26F); }
+  .main-page-form {
+    height: 100vh;
+    padding: 60px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .main-page-form h2 {
+      text-align: center; }
+
+.form-auth {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 480px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); }
+  .form-auth input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 80%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px; }
+  .form-auth button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 80%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer; }
+
+@media (max-width: 992px) {
+  .form-auth input {
+    width: 100%; }
+  .form-auth button {
+    width: 100%; } }
